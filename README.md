@@ -77,13 +77,13 @@ The Colab notebook for the entire workflow can be accessed here:
 ---
 
 ## Visualizations
-Sample predictions are saved under `runs/predict/exp` directory. You can visualize the bounding boxes and class predictions using the following snippet:
+Sample predictions are saved under `/content/yolo_project/test_predictions2/` directory. You can visualize the bounding boxes and class predictions using the following snippet:
 
 ```python
 import os
 from IPython.display import Image, display
 
-prediction_dir = "runs/predict/exp"
+prediction_dir = "/content/yolo_project/test_predictions2"
 for img_file in os.listdir(prediction_dir):
     if img_file.endswith(".jpg"):
         display(Image(filename=os.path.join(prediction_dir, img_file)))
